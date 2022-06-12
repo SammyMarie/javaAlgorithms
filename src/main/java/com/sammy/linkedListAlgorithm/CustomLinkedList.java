@@ -5,12 +5,22 @@ import com.sammy.linkedListAlgorithm.model.Node;
 public class CustomLinkedList {
     private Node head;
 
-    public Node head() {
-        return head;
-    }
+    public void deleteBackHalf(){
+        if(head == null || head.next() == null){
+            head = null;
+        }
 
-    public void setHead(Node head) {
-        this.head = head;
+        Node slow = head;
+        Node fast = head;
+        Node previous = Node.builder().build();
+
+        while(fast != null && fast.next() != null){
+            fast = fast.next().next();
+            previous = slow;
+            slow = slow.next();
+        }
+
+        previous.setNext(null);
     }
 
     public void displayContents(){
@@ -21,5 +31,13 @@ public class CustomLinkedList {
         }
 
         System.out.println();
+    }
+
+    public Node head() {
+        return head;
+    }
+
+    public void setHead(Node head) {
+        this.head = head;
     }
 }

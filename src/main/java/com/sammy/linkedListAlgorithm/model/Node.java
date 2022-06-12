@@ -1,5 +1,10 @@
 package com.sammy.linkedListAlgorithm.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+
+@Builder
+@AllArgsConstructor
 public class Node {
     private final int data;
     private Node next;

@@ -17,5 +17,7 @@ public class CustomLinkedListApp {
         thirdNode.setNext(fourthNode);
 
         linkedList.displayContents();
+        linkedList.deleteBackHalf();
+        linkedList.displayContents();
     }
 }
