@@ -1,6 +1,6 @@
-package com.sammy;
+package com.sammy.stringAlgorithm;
 
-public class NormalizeStringsAlgorithms {
+public class NormalizeStrings {
 
     public static String normalizeString(String value){
         return value.toLowerCase().trim().replace(",", "");

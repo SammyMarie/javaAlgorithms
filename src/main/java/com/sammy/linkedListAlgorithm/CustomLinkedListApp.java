@@ -2,7 +2,7 @@ package com.sammy.linkedListAlgorithm;
 
 import com.sammy.linkedListAlgorithm.model.Node;
 
-public class CustomApp {
+public class CustomLinkedListApp {
     public static void main(String[] args) {
         CustomLinkedList linkedList = new CustomLinkedList();
 

@@ -1,6 +1,6 @@
-package com.sammy;
+package com.sammy.stringAlgorithm;
 
-public class StringAlgorithm {
+public class UpperAndLowercaseStrings {
     public static boolean isStringUpperCase(String word){
         return word.chars().allMatch(Character::isUpperCase);
     }

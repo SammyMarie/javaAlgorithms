@@ -1,6 +1,6 @@
-package com.sammy;
+package com.sammy.stringAlgorithm;
 
-public class PasswordComplexityAlgorithm {
+public class PasswordComplexity {
     public static boolean isPasswordComplex(String password){
 
         return password.chars().anyMatch(Character::isUpperCase) &&
